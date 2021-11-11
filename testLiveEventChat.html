@@ -13,6 +13,7 @@
 </body>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
@@ -63,6 +64,9 @@
 	} else {
 		initESW('https://service.force.com');
 	}
+	
+	$('.helpButtonEnabled').trigger("click");
+	
 </script>
 
 </html>
