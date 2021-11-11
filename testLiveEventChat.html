@@ -72,8 +72,7 @@
 </script>
 <script>
 	var triggerButtonClick = function(){
-		var chatButton = document.getElementsByClassName("helpButtonEnabled");
-		chatButton[0].click();
+		jQuery('.helpButtonEnabled').trigger("click");
 	};
 	
 	jQuery(document).ready(function(){
